@@ -1,0 +1,110 @@
+body {
+    background-color: #1e293b;
+}
+
+.font {
+    font-size: 25px;
+    font-family: Trebuchet MS, Geneva, Arial;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.h1style {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: Trebuchet MS, Geneva, Arial;
+    color: white;
+    display: inline-block; /* needed for typing animation */
+}
+
+.typingEffect {
+    overflow: hidden;
+    border-right: .15em solid #60a5fa;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3.5s steps(20, end) forwards;
+}
+
+.placeHeading {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers the boxes in the container*/
+  }
+  
+.box {
+    text-align: center;
+    flex: 1; /* Allows the boxes to grow or shrink as needed */
+    margin: 0px; /* Adjust the margin as needed */
+ 
+}
+
+.paragraphs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.grow img{
+    transition: 1s ease;
+}
+    
+.grow img:hover{
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    transition: 1s ease;
+}
+
+#myBtn {
+    /* display: none; Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #1e293b; 
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 10px; /* Increase font size */
+    opacity: 0.5;
+  }
+
+  #myBtn:hover {
+    background-color: #60a5fa; /* Add a dark-grey background on hover */
+  }
+
+  form {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    background-image: url(images/HKHarbor.jpg);
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="harbor">
+        <form>
+            <label for="pswd">Enter Password: </label>
+            <input type="password" id="pswd">
+            <input type="button" value="Submit" onclick="checkPswd();" />
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </form>
+        <script type="text/javascript">
+            function checkPswd() {
+                var confirmPassword = "Tehee";
+                var password = document.getElementById("pswd").value;
+                if (password == confirmPassword) {
+                    window.location="main.html";
+                }
+                else{
+                    alert("Passwords do not match. Sorry love! Please try again and click Submit.");
+                }
+            }
+         </script>
+         </div>
+</body>
+</html>
+
+<!-- file:///Users/philiplee/Desktop/Duke/Anniversary/index.html -->
